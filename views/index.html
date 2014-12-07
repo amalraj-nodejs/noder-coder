@@ -1,8 +1,212 @@
-<html>
-<head>
-	<title>This is home page</title>
-</head>
-<body>
-<h1>This is Home Page</h1>
-</body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Noder Coder</title>
+		
+		<link rel="icon" href="./images/favicon.ico" type="image/x-icon" >
+		
+		<link rel="stylesheet" type="text/css" href="./stylesheets/component.css" />
+		<link rel="stylesheet" type="text/css" href="./stylesheets/semantic.css" />
+
+		<script src="./javascripts/modernizr.custom.js"></script>
+		<script src="./javascripts/jquery.js"></script>
+		<script src="./javascripts/semantic.min.js"></script>
+		<script src="./javascripts/speakClient.js"></script>
+		<script src="./javascripts/d3.v3.min.js"></script>
+<script src="./javascripts/d3.tip.v0.6.3.js"></script>
+
+	</head>
+	<body>
+		<div id="st-container" class="st-container">
+			<!-- 	
+				example menus 
+				these menus will be on top of the push wrapper
+			-->
+			
+			
+
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				<!-- 	
+					example menus 
+					these menus will be under the push wrapper
+				-->
+				
+
+				<nav class="st-menu st-effect-6" id="menu-6">
+				 <div id="audio"></div>
+				<button value="" id="Close" class="ui submits button fullwidth">Close</button>
+					<!-- Change the width and height values to suit you best -->
+<div class="typeform-widget" data-url="https://amalraj.typeform.com/to/MtfgYZ" data-text="sample" style="width:100%;height:85%;top:5%;position:absolute;background-image: url('https://d4z6dx8qrln4r.cloudfront.net/background-4fabafdc2cd6b-default.jpeg')">
+<h3 style="color: #05a3c6;font-family: Source Sans Pro,sans-serif; text-align:center">Terms of Service</h3>
+</div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}
+})()</script>
+<!--<div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;">Powered by <a href="http://www.typeform.com/?utm_campaign=typeform_MtfgYZ&amp;utm_source=website&amp;utm_medium=typeform&amp;utm_content=typeform-embedded&amp;utm_term=English" style="color: #999" target="_blank">Typeform<a/></div>-->
+				</nav>			
+						
+							<div id="st-trigger-effects" class="column">
+							<header class="heading"> Noder Coder </header>
+							<div class="contentLeft">
+							<h3>Engineering</h3>
+								<ul>
+								<li>Software Development is an Art and coding is meditation.</li>
+								<li>500,000+ strong global dev community.</li>
+								<li>Develop in Go, Python, Node, Ruby, PHP, etc or play with Docker, Wordpress, Django, Laravel or create Android, IOS/iPhone, HTML5 apps. All for FREE!</li>
+								</ul>
+
+							</div>
+							<!--Registration Form content start here -->
+								<div class="ui form segment">
+								<h3>Registration Form</h3>
+									
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text" placeholder="Last Name">
+    </div>
+    <div class="field">
+      <label>First Name</label>
+      <input type="text" placeholder="First Name">
+    </div>
+  
+									<div class="field required">
+    <label>Email</label>
+    <input type="text" placeholder="Email">
+  </div>
+  <div class="field required">
+    <label>Password</label>
+    <div class=" input">
+      <input type="password">
+    </div>
+  </div>
+  <!--<div class="inline fields">
+    <div class="field">
+      <label>Phone Number</label>
+      <input type="text" placeholder="(xxx)">
+    </div>
+    <div class="field">
+      <input type="text" placeholder="xxx">
+    </div>
+    <div class="field">
+      <input type="text" placeholder="xxxx">
+    </div>
+  </div>-->
+  <div class="inline field">
+   <!-- <div class="ui checkbox"> -->
+      <input data-effect="st-effect-6" type="checkbox" class="Agreecheckbox" id="ch">
+      <label for="ch">I agree to the <a href="#" >Terms of Service</a></label>
+   <!-- </div>-->
+  </div>
+ <button data-effect="st-effect-6" class="ui submits button submitbtn">Submit</button>
+
+ <!-- Graph only start here-->
+<section id="graph">
+	<h3 style="margin: 10px;">Report - Total Hits Vs Success Hits</h3>
+<script>
+
+var margin = {top: 40, right: 20, bottom: 30, left: 40},
+    width = 460 - margin.left - margin.right,
+    height = 250 - margin.top - margin.bottom;
+
+var formatPercent = d3.format("d");
+
+var x = d3.scale.ordinal()
+    .rangeRoundBands([0, width], .1);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var xAxis = d3.svg.axis()
+    .scale(x)
+    .orient("bottom");
+
+var yAxis = d3.svg.axis()
+    .scale(y)
+    .orient("left")
+    .tickFormat(formatPercent);
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<strong>Success:</strong> <span style='color:red'>" + d.success + "</span>";
+  })
+console.log(d3.select('body').select('.st-container'));
+var svg = d3.select('body').select('.st-container').select("#graph").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+svg.call(tip);
+
+d3.tsv("./javascripts/data.tsv", type, function(error, data) {
+  x.domain(data.map(function(d) { return d.hit; }));
+  y.domain([0, d3.max(data, function(d) { return d.success; })]);
+
+  svg.append("g")
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(xAxis)
+      .append("text")
+      .attr("x", 250)
+      .attr("dy", "32")
+      .style("text-anchor", "end")
+      .text("Total Hits");
+
+
+  svg.append("g")
+      .attr("class", "y axis")
+      .call(yAxis)
+    .append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 6)
+      .attr("dy", ".71em")
+      .style("text-anchor", "end")
+      .text("Success Hits");
+
+  svg.selectAll(".bar")
+      .data(data)
+    .enter().append("rect")
+      .attr("class", "bar")
+      .attr("x", function(d) { return x(d.hit); })
+      .attr("width", x.rangeBand())
+      .attr("y", function(d) { return y(d.success); })
+      .attr("height", function(d) { return height - y(d.success); })
+      .on('mouseover', tip.show)
+      .on('mouseout', tip.hide)
+
+});
+
+function type(d) {
+  d.success = +d.success;
+  return d;
+}
+
+</script>
+</section>
+
+<!-- Graph only end here-->
+</div>
+<!--Registration Form content ends here -->
+
+
+								
+								
+							</div>
+							
+						
+					</div><!-- /st-content-inner -->
+				
+		</div><!-- /st-container -->
+		<script src="./javascripts/classie.js"></script>
+		<script src="./javascripts/sidebarEffects.js"></script>
+		
+
+		
+
+	</body>
 </html>
