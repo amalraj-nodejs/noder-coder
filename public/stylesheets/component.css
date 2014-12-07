@@ -520,11 +520,11 @@ padding:15px 60px;
   left: 0;
 }
 
-#graph,.st-menu-open .submitbtn{
+#graph,.st-menu-open .submitbtn,.st-menu-open .pwd{
 	display:none !important;
-}
+ }
 
-.st-menu-open #graph, .submitbtn
+.st-menu-open #graph, .submitbtn,.pwd
 {
 	display:block !important;
 }

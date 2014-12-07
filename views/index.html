@@ -10,9 +10,11 @@
 		
 		<link rel="stylesheet" type="text/css" href="./stylesheets/component.css" />
 		<link rel="stylesheet" type="text/css" href="./stylesheets/semantic.css" />
+    
 
 		<script src="./javascripts/modernizr.custom.js"></script>
 		<script src="./javascripts/jquery.js"></script>
+    
 		<script src="./javascripts/semantic.min.js"></script>
 		<script src="./javascripts/speakClient.js"></script>
 		<script src="./javascripts/d3.v3.min.js"></script>
@@ -76,7 +78,7 @@
     <label>Email</label>
     <input type="text" placeholder="Email">
   </div>
-  <div class="field required">
+  <div class="field required pwd">
     <label>Password</label>
     <div class=" input">
       <input type="password">
@@ -97,19 +99,20 @@
   <div class="inline field">
    <!-- <div class="ui checkbox"> -->
       <input data-effect="st-effect-6" type="checkbox" class="Agreecheckbox" id="ch">
-      <label for="ch">I agree to the <a href="#" class="terms">Terms of Service</a></label>
+      <label for="ch">I agree to the <a href="tos.html" class="terms" target="_blank">Terms of Service</a></label>
    <!-- </div>-->
   </div>
- <button data-effect="st-effect-6" class="ui submits button submitbtn">Submit</button>
+ <button data-effect="st-effect-6" class="ui submits button submitbtn" >Submit</button>
 
  <!-- Graph only start here-->
+
 <section id="graph">
-	<h3 style="margin: 10px;">Report - Total Hits Vs Success Hits</h3>
+<h3 style="margin: 2px;">Report - Total Hits Vs Success Hits</h3>	
 <script>
 
 var margin = {top: 40, right: 20, bottom: 30, left: 40},
     width = 460 - margin.left - margin.right,
-    height = 250 - margin.top - margin.bottom;
+    height = 200 - margin.top - margin.bottom;
 
 var formatPercent = d3.format("d");
 
@@ -206,18 +209,15 @@ function type(d) {
 		<script src="./javascripts/sidebarEffects.js"></script>
 		<script>
 
-$(document).ready(function(){
+$(document).ready(function()x`x`{
  $(".terms").on('click',function(evt){
- 	//$("#dialog").dialog("open");
- 	console.log($("#dialog"));
+ 	  $("#dialog").dialog();
+ 	
  });
 });
 
 
 		</script>
-<div id="dialog" title="Basic dialog">
-  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
-</div>
 		
 
 	</body>
