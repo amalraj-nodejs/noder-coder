@@ -8872,7 +8872,7 @@ i.flag.zimbabwe:before {
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: middle;
-  font-size: 1.1em;
+  font-size: 13px;
 }
 
 .ui.form .inline.fields .field > input,
@@ -24400,7 +24400,7 @@ h2 {
 
 h3 {
   font-size: 15px;
-  margin-bottom: 10px
+  margin: 14px 0;
 }
 
 h4 {
